@@ -125,6 +125,7 @@ namespace Flic.Server.Controllers
         [HttpPost("TH03Add")]
         public async Task<int> TH03Add(DangkyTH03 item)
         {
+
             try
             {
                 item.HovaDem = ToUpperEveryWord(item.HovaDem.Trim());

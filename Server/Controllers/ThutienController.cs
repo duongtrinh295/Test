@@ -55,6 +55,7 @@ namespace eBHYT.Server.Controllers
         //}
         public static byte[] GetBytesFromDatatable(DataTable table)
         {
+
             if (table == null) throw new ArgumentNullException(nameof(table));
 
             using (MemoryStream stream = new MemoryStream())
